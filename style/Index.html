@@ -5,10 +5,13 @@
 		
 		<meta charset = "UTF-8">
 		<meta nome ="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel = "stylesheet" href = "/style/StyleNetflix.css">		
 		
-		<link rel = "stylesheet" href = "/style/StyleNetflix.css">
-		<script rel = "text/javascript" href = "../js/main.js"></script>
-		
+		<!--owl css-->
+
+		<link rel = "stylesheet" href = "/style/Owl/owl.carousel.min.css">
+		<link rel = "stylesheet" href = "/style/Owl/owl.theme.default.min.css">
+
 		<title>BookFlix</title>
 	</head>
 
@@ -32,12 +35,12 @@
 		
 		<main>
 			<div class = "livro-principal">
-				<div class=" container">
+				<div class=" containes">
 					 <h3 class="titulo">As Cronicas De Gelo e Fogo</h3>
 					 <p class="sinopse"> Nas florestas ao norte de Winterfell, forças sobrenaturais se espalham por trás da Muralha que protege a região. E, nas Cidades Livres, o jovem Rei Dragão exilado na Rebelião de Robert planeja sua vingança e deseja recuperar sua herança de família: o Trono de Ferro de Westeros.</p>
 					 
 					 <div class="botoes">
-						<button role="button" class="botao">
+						<button role="button" class="botao" onclick = "resumoPrincipal()">
 							<i class="fas fa-book-open"></i>
 							Ler Resumo agora
 						</button>
@@ -55,7 +58,63 @@
 
 		</main>
 
+		<div class="carrosel-livros">
+			<div class="owl-carousel owl-theme">
+				<div class="item">
+					<img class="caixa-livro" src="../img/holmes.jpg" alt="">
+				</div>
+
+				<div class="item">
+					<img class="caixa-livro" src="../img/cemiterio de dragoes.jpg" alt="">
+				</div>
+
+				<div class="item">
+					<img class="caixa-livro" src="../img/percy jackson.jpg" alt="">
+				</div>
+
+				<div class="item">
+					<img class="caixa-livro" src="../img/hobit.jpg" alt="">
+				</div>
+
+				<div class="item">
+					<img class="caixa-livro" src="../img/alice.jpg" alt="">
+				</div>
+
+				<div class="item">
+					<img class="caixa-livro" src="../img/i-am-legend-richard-matheson-editora-gold-medal-books-1954-book-cover.jpg" alt="">
+				</div>
+
+				<div class="item">
+					<img class="caixa-livro" src="../img/min1.jpg" alt="">
+				</div>
+
+				<div class="item">
+					<img class="caixa-livro" src="../img/o-segredo-do-bosque.jpg" alt="">
+				</div>
+
+				<div class="item">
+					<img class="caixa-livro" src="../img/eramos-seis-sra-leandro-dupre-companhia-editora-nacional-capa-livro.jpg" alt="">
+				</div>
+
+				<div class="item">
+					<img class="caixa-livro" src="../img/saci.jpg" alt="">
+				</div>
+
+
+
+
+			</div>
+
+
+		</div>
+
+		<!--linkando JS-->
 		<script src="https://kit.fontawesome.com/5b7d87045e.js" crossorigin="anonymous"></script>
+		
+		<script src= "../js/owl/jquery.min.js" ></script>
+		<script src= "../js/owl/owl.carousel.min.js" ></script>
+		<script src = "../js/owl/main.js"></script>
+
 	</body>
 
 </html>

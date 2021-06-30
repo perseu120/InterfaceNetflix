@@ -15,6 +15,9 @@ body{
     background: var(--preto);
     font-family: 'Times new romam', Times, serif;
     color: white;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100% ), url('../img/gameofresumo.jpg');
+    height: 400px;
+    background-size: cover;
 }
 header .containes{
     display: flex;/*coloca os intens alinhados u mdo lado do outro*/
@@ -30,20 +33,10 @@ header .containes{
     font-size: 40px;
 }
 
-header nav a{
-    text-decoration: none; /*serve para tira as linha de baixo de um link*/
-    color: #AAA;
-    margin-right: 10px;
-}
-
-header nav a:hover{/*evento para acionar quando o mouse tiver em cima*/
-    color:#fff;
-
-}
 
 .livro-principal{
     font-size: 15px;
-    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100% ), url('../img/gelo-e-fogo.jpg');
+   
     height: 400px;
     background-size: cover;
 
@@ -51,21 +44,14 @@ header nav a:hover{/*evento para acionar quando o mouse tiver em cima*/
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    margin-bottom: 30px;
 
 }
-.icone-mais{
-    height: 15px;
-}
 
-.livro-principal .sinopse{
-    margin-top: 10px;
-    margin-bottom: 40px;
-}
-.livro-principal .titulo{
+
+.titulo{
     margin-top: 15%;
     font-size: 40px;
-    font-family: 'Arial', sans-serif, Times, serif;
+    font-family: Arial, sans-serif;
 }
 .botao{
     background-color: rgba(0,0,0,.50);
@@ -81,36 +67,9 @@ header nav a:hover{/*evento para acionar quando o mouse tiver em cima*/
     background-color: white;
     color: black;
 }
-.containes{
-    margin-left: 20px;
+
+.livro-principal .containes .titulo{
+    display: column;
+  
+
 }
-
-.livro-principal .containes{
-    width: 70%;
-}
-
-.caixa-livro{
-    height: 380px;
-    width: 287px;
-
-    display: block;
-}
-@media screen and (max-width: 700px){
-    header .containes{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .botao{
-        margin-top: 5px;
-        width:300px;
-        
-    }
-}
-
-@media screen and (min-width: 1000px){
-    .sinopse{
-        width: 50%;
-    }
-}
-
